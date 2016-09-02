@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="col-md-12 column">
+    <div class="jumbotron">
+      <h1>
+        Contact List ver.4
+      </h1>
+      <p>
+        <a class="btn btn-primary btn-large" id="createContact" data-target="createForm" href="#">Create contact</a>
+        <a class="btn btn-primary btn-large" id="listContacts"
+           data-target="listFunction" href="#">All Contacts</a>
+        <a class="btn btn-primary btn-large" id="searchContacts" data-target="search" href="#">Search Contact</a>
+        <a class="btn btn-primary btn-large" id="specificContact" data-target="displayRecord" href="#">View contact by ID</a>
+      </p>
+    </div>
+
+    <div id="controlArea">
+      <div id="createForm"  style="display:none" class="well">
+        <h3>Create contact</h3>
+        First Name:<br>
+        <input type="text" class="form-control" id="first_name">
+        <br>
+        Last Name:<br>
+        <input type="text" class="form-control" id="last_name">
+        <br>
+        Phone:<br>
+        <input type="text" class="form-control" id="phone_num">
+        <br>
+        Email:<br>
+        <input type="text" class="form-control" id="email">
+        <br>
+        <button class="btn btn-primary" id="createSubmit"> Submit </button>
+      </div>
+
+      <div id="search" style="display:none" class="well">
+        <h3>Search contact</h3>
+        <input type="text" class="form-control" id="query">
+        <br>
+        <button class="btn btn-primary" id="searchSubmit"> Submit </button>
+      </div>
+
+      <div id="displayRecord" style="display:none" class="well">
+        <h3>View contact by ID</h3>
+        ID:<br>
+        <input type="text" class="form-control"  id="idSearch">
+        <br>
+        <button class="btn btn-primary" id="displayRecordButton"> Submit </button>
+      </div>
+    </div>
+
+    <div id="results" style="display:none" class="well">
+    </div>
+
+  </div>
+</div>
